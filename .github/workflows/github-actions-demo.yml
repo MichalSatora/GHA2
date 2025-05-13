@@ -13,7 +13,8 @@ on:
 jobs:
   Build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Step1
-        run: echo Event: ${{ github.event_name }}
+        run: echo The username is ${{ github.event_name }}
   
