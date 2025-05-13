@@ -16,5 +16,7 @@ jobs:
 
     steps:
       - name: Step1
-        run: echo The username is ${{ github.event_name }}
+        run: echo Event name is ${{ github.event_name }}
+      - name: Step2
+        run: echo Branch name is ${{ github.ref }}
   
